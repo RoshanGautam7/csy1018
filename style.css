@@ -1,0 +1,285 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body, ::placeholder , input{
+	font-family: 'Poppins', sans-serif;
+}
+
+/*Header styling starts*/
+header{
+	background: linear-gradient(
+297deg
+, #f57171 , #cc0707);
+	padding: 0.3rem 4rem ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+a{
+	text-decoration: none;
+}
+.logo{
+	background: green;
+	padding:0.5rem 1rem;
+}
+.logo h3{
+	color:red;
+}
+.logo h3 span{
+	color:white;
+}
+ ul{
+	display: flex;
+}
+ul li{
+	list-style: none;
+	padding: 0 0.8rem;
+}
+ul li a{
+	text-decoration: none;
+	text-transform: capitalize;
+	font-family: 'Poppins', sans-serif;
+	color:white;
+	font-size: 0.8rem!important;
+	transition: all 0.5s;
+}
+ul li a:hover{
+	color:blue;
+}
+ul li a:active{
+	color:gray;
+}
+/*Header styling ends*/
+.home-page .desc p{
+	margin-top: 0.3rem;
+	font-size: 1rem;
+}
+.home-page .desc{
+	max-width: 55%;
+	text-align: center;
+}
+ .home-page img{
+	max-width: 100%;
+	height:auto;
+}
+
+.home-page .photo-img img{
+	height: 200px;
+	width:200px ;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.home-page main{
+	margin-top: 3rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height:75vh;
+}
+.home-page main h2{
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+}
+.home-page main h2 span{
+	color:red;
+}
+
+
+.page-title{
+	font-weight: bold;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	padding-left: 1rem;
+	padding-top: 2rem;
+	margin-bottom: 2rem;
+}
+.page-title::after{
+	content: "";
+	position: relative;
+	bottom: -2px;
+	height: 4px;
+	width: 50%;
+	background: red;
+	left: 1rem;
+}
+.sub-title{
+	padding-left: 1rem;
+}
+.parent{
+	display: flex;
+	padding: 1.2rem;
+	margin: 0 auto;
+	max-width: 70%;
+}
+.parent .left{
+	flex-basis: 50%;
+}
+.parent .left .single{
+	padding: 0.8rem;
+	background: #b0f3b8c2;
+	margin-bottom: 0.4rem;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	box-shadow:2px 2px 1px #adadad;;
+}
+.parent .right{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	flex-basis: 50%;
+	margin-left: 2rem;
+	background: #b0f3b8c2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.parent .right input{
+	display: block;
+	height: 33px;
+    width: 263px;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+}
+input:placeholder{
+	font-family: 'Poppins', sans-serif;
+}
+.parent .right input[type="submit"]{
+	transition: all 0.45s ease;
+}
+.parent .right input[type="submit"]:hover{
+	background: red;
+	color: white;
+	cursor: pointer;
+}
+.parent .right textarea{
+	padding: 0.5rem;
+    border: none;
+    height: 70px;
+    width: 263px;
+}
+.projects-container img{
+	max-width:100%;
+	height: auto;
+}
+.project{
+	text-align: center;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	background: #eae4e4;
+    padding: 10px;
+    box-shadow: 1px 2px 2px #cecece;
+}
+.project h3{
+	padding:10px;
+	padding-left: 0;
+}
+.projects-container{
+	margin-bottom: 10px;
+	max-width: 980px;
+	margin:0 auto;
+	margin-top: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px,auto));
+	grid-gap: 30px;
+}
+footer{
+		padding: 0.7rem;
+		background: #d8d8d8;
+    	color: midnightblue;
+    	margin-top: 10px;
+	}
+	footer  p{
+		text-align: center;
+	}
+/*Media Screen for small screen sizes*/
+@media screen and (max-width: 520px ){
+	/*Header Styling for small device*/
+	.mobile-only{
+	display: block!important;
+	}
+	header{
+		position: relative;
+	}
+	ul.menu{
+		display: block;
+		position: relative;
+		top:100%;
+		right: 0;
+		background: green;
+		height:0%;
+		transition: all 0.7s ease-in-out;
+		overflow: hidden;
+	
+	}
+	ul.menu li{
+		display: block;
+		padding:0.6rem 1.6rem;
+		text-align: center;
+	}
+	ul.menu.active{
+		height:auto;
+
+	}
+	
+	/*Header Styling for small device ends*/
+	main{
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
+	}
+	.parent{
+		flex-direction: column;
+		padding: 0;
+		padding-top: 2rem
+	}
+	form{
+		width: 100%;
+		padding: 5px;
+	}
+	.parent .left{
+		padding: 0;
+	}
+	.parent .left,.parent .right{
+		flex-basis: 100%;
+		margin-left: 0;
+	}
+	input{
+		max-width: 100%;
+	}
+	textarea{
+		max-width: 100%;
+	}
+} 
+.heading{
+	text-align: center;
+}
+.heading h1{
+	font-size: 40px;
+	background: linear-gradient(
+297deg
+, #f57171 , #cc0707); 
+}
+.ws{
+	text-align:center;
+}
+.karnali{
+	border-radius: 50%;
+}
+.ws h2{
+		font-size: 40px;
+	background: linear-gradient(
+297deg
+, #f57171 , #cc0707); 
+}
+.intro{
+	background-color: grey;
+
+}
+.skills{
+	background-color: grey;
+}
