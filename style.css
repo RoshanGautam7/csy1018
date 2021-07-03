@@ -200,9 +200,6 @@ footer{
 /*Media Screen for small screen sizes*/
 @media screen and (max-width: 700px ){
 	/*Header Styling for small device*/
-	.mobile-only{
-	display: block!important;
-	}
 	header{
 		position: relative;
 	}
@@ -341,7 +338,7 @@ footer{
 	background-color: orange;
 	opacity: 0.5;
 }
-@media screen and (max-width: 650px){
+@media screen and (max-width: 700px){
 	.topu{
 	grid-column: 1/5;
 	}
@@ -423,5 +420,9 @@ footer{
 .f{
 		height: 250px;
 	width: 350px;
+}
+#hamburger:checked + .menu {
+	display: flex;
+
 }
 }
