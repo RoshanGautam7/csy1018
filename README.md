@@ -1,2 +1,2 @@
-# csy1018
+# computer
 class projects
